@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulier</title>
+	<link rel="stylesheet" href="css/stijl.css">
+</head>
+<body>
+	<nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./LES1.html">Les 1</a> </li>
+            <li><a href="./LES2.html"> Les 2</a></li>
+            <li><a href="./LES3.html">Les 3</a></li>
+            <li><a href="./LES4.html">Les 4</a></li> 
+            <li><a class="current">formulier</a></li>
+            <li><a href="/besluit.html">besluit</a></li>
+        </ul>
+      </nav>
+	<main>
+		<form action="toon_waarden_post.php" method="post" >
+
+        	<p>Voornaam : <input type="text" name="voornaam" /></p>
+        	<!-- je vindt na submit de voornaam terug in $_POST['voornaam'] -->
+        	
+			<p>Achternaam : <input type="text" name="achternaam" /></p>
+			<p>mail-adres : <input type="text" name="mail-adres" /></p>
+			<h3> kies een of meerdere koptelefoon(s):</h3>
+			<p>Bose<input type="checkbox" name="koptelefoons[]" value= "Bose"  /></p>
+			<p>JBL<input type="checkbox" name="Koptelefoons[]" value= "JBL"  /></p>
+			<p>Airpods<input type="checkbox" name="koptelefoons[]" value= "Airpods" /></p>
+			<p>Beats<input type="checkbox" name="koptelefoons[]" value= "Beats"  /></p>
+			<h3> hoe wil je betalen?</h3>
+			<select name="betaalmethode">
+                  <option>mastercard</option>
+                  <option>paypal</option>
+                  <option>visa</option>
+            </select>
+			     
+			<p>Einde : <input type="submit" name="verzend" value="Verzend formulier" /></p>
+        
+        </form>
+	</main>
+	
+</body>
+</html>
