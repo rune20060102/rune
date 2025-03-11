@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    color: black
+}
+
+nav {
+    font-size: 1.2em;
+    background-color: darkgreen;
+}
+
+nav a{
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav .current {
+    color: red;
+    text-decoration: none;
+}
